@@ -1,0 +1,27 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <span class="brand">STYLE <mat-icon>remove_done</mat-icon>STYLE</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarTogglerDemo02">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed">
+    <div style="width: 100%; text-align: end;">
+      <div>
+        <form class="example-form" style="display: inline;">
+          <input type="text" placeholder="Search" /> 
+        </form>
+        <a mat-button>POST A LOOK</a>
+        <a mat-raised-button color="accent">LOGIN/REGISTER</a>
+      </div>
+      <div>
+        <a mat-button>FLAUNT</a>
+        <a mat-button>READ</a>
+        <a mat-button>WATCH</a>
+        <a mat-button>SHOP</a>
+        <a mat-button>STYLE WEDDINGS</a>
+        <a mat-button>CHRITY AUCTION</a>
+      </div>
+    </div>
+  </div>
+</nav>

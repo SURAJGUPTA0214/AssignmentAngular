@@ -1,0 +1,18 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-spacer-2nd {
+  flex: 0.7 0.7 auto;
+}
+.brand{
+  padding-left: 50px;
+  font-size: 40px;
+  font-family: emoji;
+}   
+
+
+@media only screen and (min-width:320px) and ( max-width: 480px) {
+  .brand {
+    font-size:15px;
+  }
+}

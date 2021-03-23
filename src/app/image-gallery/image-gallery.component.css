@@ -1,0 +1,15 @@
+.mat-figure{
+    top: 5px !important;
+    right: 5px !important;
+}
+.headings{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'FontAwesome';
+    padding: 0px 10px;
+    letter-spacing: 1px;
+}
+img:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}

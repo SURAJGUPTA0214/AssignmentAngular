@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; padding: 0; box-sizing: border-box; font-family: emoji, "Helvetica Neue", sans-serif; }
+
+.mat-figure{
+    top: 5px !important;
+    right: 5px !important;
+}
+
+
+@media only screen and (min-width:320px) and ( max-width: 480px) {
+    .heading {
+      font-size:15px;
+    }
+  }

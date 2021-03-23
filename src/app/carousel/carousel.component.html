@@ -1,0 +1,10 @@
+<mat-carousel
+  timings="100ms ease-in"
+  [autoplay]="true"
+  interval="6000"
+  color="white"
+>
+  <mat-carousel-slide *ngFor="let slide of slides; let i = index" [image]="slide.image" style="width:220px; height:100%"></mat-carousel-slide>
+</mat-carousel>
+
+

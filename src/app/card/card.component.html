@@ -1,0 +1,12 @@
+<div style="border:1px solid grey">
+    <h2 style="text-align: center;padding: 20px 0px;" class="heading">DON'T MISS</h2>
+    <div *ngFor="let items of cardsdata; let i=index">
+        <img src={{items.image}} style="width:100%; height: 150px"/>
+        <div style="display: flex; justify-content: space-around;" class="text">
+            <p >{{items.text}}</p>
+            <span class="material-icons" style="cursor: pointer;"> arrow_right_alt</span>
+        </div>
+        
+    </div>
+</div>
+

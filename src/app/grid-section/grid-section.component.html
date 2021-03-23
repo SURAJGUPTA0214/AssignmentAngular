@@ -1,0 +1,69 @@
+<div class="container" style="height: 515px; padding:35px 0px">
+    <div class="row">
+      <div class="col-md-8 col-12">
+        <p class="heading">{{griddata[0].heading}}</p>
+        <app-divider></app-divider><br>
+        <div>
+            <img src={{griddata[0].image}} style="width:100%; height:400px" />
+        </div>
+        
+      </div>
+      <div class="col-md-4 col-12">
+          <div>
+            <img src={{griddata[1].image}} style="width:100%; height: 225px;" />
+            <img src={{griddata[2].image}} style="width:100%; height:225px; padding-top: 5px;" />
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="padding:35px 0px">
+    <div class="row">
+      <div class="col-md-8 col-12">
+        <div>
+          <p style="font-style:italic">Go Lunar New Year Shoaping with Sharon Au!</p>
+            <h1 class="rev">TRENDING LOOKS</h1>
+            <app-divider></app-divider>
+        </div>
+          
+          <mat-grid-list cols="2" rowHeight="2:1.5">
+            <div *ngFor="let img of trendingLooksImages; let i=index">
+              <mat-grid-tile><img src={{img.image}} style="width:100%; height: 100%;"/></mat-grid-tile>
+            </div>
+          </mat-grid-list>   
+
+
+          <div style="padding:35px 0px">
+            <h1 class="rev">LATEST STORIES</h1>
+            <app-divider></app-divider>
+          </div>
+            
+            <div *ngFor="let items of lateststorydata; let i=index">
+              <p class="date">{{items.date}}</p>
+              <h2 class="headings">{{items.heading}}</h2>
+              <p class="text">{{items.text}}<span class="author"> | {{items.author}}</span></p>
+              <img src={{items.image}} style="width:100%; height: 420px ;"/>
+            </div>
+
+
+      </div>
+      <div class="col-md-4 col-12">
+          <div>
+            <img src={{griddata[1].image}} style="width:100%; height: 225px;" /><br><br>
+              <div style="display:flex; justify-content: center; align-items: center; flex-direction: column;border: 1px solid grey;">
+                <p style="font-style:italic">Get them now</p>
+                <h1 class="heading">SHOP </h1>
+              </div >
+               
+                <mat-grid-list cols="2" rowHeight="2:1.5" style="border:1px solid grey">
+                <div *ngFor="let img of galleryimage; let i=index">
+                <mat-grid-tile><img src={{img.image}} style="width:100%; height: 100%;"/></mat-grid-tile>
+                </div>
+            </mat-grid-list>
+          </div><br>
+          <app-card></app-card><br>
+          <app-social></app-social>
+      </div>
+    </div>
+  </div>

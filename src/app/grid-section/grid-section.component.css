@@ -1,0 +1,36 @@
+.rev{
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 400;
+    font-family: 'FontAwesome';
+}
+.heading{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'FontAwesome';
+}
+.headings{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'FontAwesome';
+    padding: 0px 10px;
+}
+.date{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: 'FontAwesome';
+}
+.text{
+    font-family: 'FontAwesome';
+    padding: 5px 10px;
+}
+
+@media only screen and (min-width:320px) and ( max-width: 480px) {
+    .heading {
+      font-size:15px;
+    }
+    .headings {
+        font-size:12px;
+      }
+  }
